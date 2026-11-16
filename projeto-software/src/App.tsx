@@ -1,15 +1,16 @@
-import { useState } from 'react'
+import { Outlet } from "react-router"
+import Menu from "./components/Menu"
 import MenuAcessibilidade from "./components/MenuAcessibilidade"
-
-import './App.css'
+import Rodape from "./components/Rodape"
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-    <>
-        <MenuAcessibilidade/>
 
+    <>
+      <MenuAcessibilidade />
+      <Menu />
+      <Outlet />
+      <Rodape />
     </>
   )
 }
